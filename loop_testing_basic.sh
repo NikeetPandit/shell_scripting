@@ -10,6 +10,10 @@ for value in {0..9}
 do
     CUR_VALUE="$value"
     echo "$CUR_VALUE"
+    if [ "$value" -eq 0 ]
+    then
+        echo $("$value") #prints name of script 
+    fi
     if [ "$value" -eq 8 ]
     then 
         echo "If statement at value 8 is hit."
