@@ -6,12 +6,14 @@
 
 echo Hello, World!
 
-for value in {1..9}
+for value in {0..9}
 do
-    echo "$value"
+    CUR_VALUE="$value"
+    echo "$CUR_VALUE"
     if [ "$value" -eq 8 ]
     then 
         echo "If statement at value 8 is hit."
+        echo "The current line is: $LINENO" #printing line number
     fi
 done
 
